@@ -21,8 +21,6 @@
 }
 
 body {
-  /* width: 100vw;
-  height: 100vh; */
   min-height: 100vh;
 }
 
@@ -74,4 +72,22 @@ button {
 
 p {
   max-width: 80vw;
+}
+
+@media screen and (max-width: 40rem) {
+  h1 {
+    font-size: 38px !important;
+  }
+  h2 {
+    font-size: 28px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  p {
+    font-size: 18px !important;
+  }
+  button {
+    font-size: 16px !important;
+  }
 }
