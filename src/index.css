@@ -21,7 +21,8 @@
 }
 
 body {
-  min-width: 320px;
+  /* width: 100vw;
+  height: 100vh; */
   min-height: 100vh;
 }
 
@@ -69,4 +70,8 @@ button {
     color: var(--color-text-primary);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
   }
+}
+
+p {
+  max-width: 80vw;
 }
