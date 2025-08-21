@@ -1,0 +1,17 @@
+.header {
+    &-container {
+        padding: 20px 0px;
+    }
+
+    &-links {
+        display: flex;
+        justify-content: end;
+        gap: 26px;
+        list-style: none;
+
+        @media screen and (max-width:40rem) {
+            justify-content: center;
+
+        }
+    }
+}

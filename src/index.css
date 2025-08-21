@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-bg: #1e2227;
+  --color-text-primary: #fff;
+  --color-text-secondary: #9ca3af;
+  --color-border: #ddd;
+  --color-button-hover: #374151;
+  --color-text-hover: #9ca3af;
+  --color-cards: #24292f;
+  --color-links: #3b82f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: var(--color-text-primary);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 45px;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.4s ease, color 0.3s ease;
+  color: var(--color-text-secondary);
+
+  &:hover {
+    color: var(--color-text-primary) !important;
+    border-color: var(--color-text-primary);
+  }
+}
+
+li {
+  display: inline-flex;
+  width: fit-content;
+}
+
+button {
+  transition: color 0.5s ease, box-shadow 0.1s ease;
+  color: var(--color-text-secondary);
+
+  &:hover {
+    color: var(--color-text-primary);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  }
+}
