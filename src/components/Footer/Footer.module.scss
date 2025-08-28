@@ -1,0 +1,43 @@
+.footer {
+    background-color: rgba(31, 41, 55, 0.5);
+    border-top: 1px solid var(--border-color);
+    padding: 1.5rem 0;
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        text-align: center;
+
+        .copyright {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1.5rem;
+
+            svg {
+                width: 1.5rem;
+                height: 1.5rem;
+                transition: transform 0.2s, opacity 0.2s;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.1);
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        .footer-content {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 0;
+        }
+    }
+}

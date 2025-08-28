@@ -1,100 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-  --color-bg: #1e2227;
-  --color-text-primary: #fff;
-  --color-text-secondary: #9ca3af;
-  --color-border: #ddd;
-  --color-button-hover: #374151;
-  --color-text-hover: #9ca3af;
-  --color-cards: #24292f;
-  --color-links: #3b82f6;
+  --bg-primary: #111827;
+  --bg-secondary: #1f2937;
+  --bg-glass: rgba(17, 24, 39, 0.8);
+  --text-primary: #d1d5db;
+  --text-secondary: #9ca3af;
+  --text-white: #ffffff;
+  --accent-start: #3b82f6;
+  --accent-end: #8b5cf6;
+  --border-color: #374151;
+  --border-glass: rgba(255, 255, 255, 0.1);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  color: var(--color-text-primary);
-  scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
-  font-size: 45px;
-  line-height: 1.1;
-}
-
-h2 {
-  font-size: 35px;
-}
-
-h3 {
-  font-size: 25px;
-  margin-top: 5px;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 ul {
   list-style: none;
-  display: flex;
 }
 
-a {
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.4s ease, color 0.3s ease;
-  color: var(--color-text-secondary);
-
-  &:hover {
-    color: var(--color-text-primary) !important;
-    border-color: var(--color-text-primary);
-  }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-li {
-  display: inline-flex;
-  width: fit-content;
-}
-
-button {
-  transition: color 0.5s ease, box-shadow 0.1s ease;
-  color: var(--color-text-secondary);
-  font-size: 18px;
-
-  &:hover {
-    color: var(--color-text-primary);
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-  }
-}
-
-p {
-  max-width: 80vw;
-  font-size: 20px;
-}
-
-label {
-  font-size: 24px;
-}
-
-@media screen and (max-width: 40rem) {
-  h1 {
-    font-size: 38px !important;
-  }
-  h2 {
-    font-size: 28px !important;
-  }
-  h3,
-  label {
-    font-size: 20px !important;
-  }
-  p {
-    font-size: 18px !important;
-  }
-  button {
-    font-size: 16px !important;
-  }
-}
+/* .scroll-reveal {
+  visibility: hidden;
+} */

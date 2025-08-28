@@ -1,0 +1,124 @@
+section {
+    background-color: rgba(31, 41, 55, 0.5);
+
+
+    .timeline-container {
+        position: relative;
+        max-width: 56rem;
+        margin: 0 auto;
+
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100%;
+            width: 2px;
+            background-color: var(--border-color);
+            display: none; // Hidden on mobile
+
+            @media (min-width: 768px) {
+                display: block;
+            }
+        }
+
+        .timeline-item {
+            margin-bottom: 3rem;
+
+            @media (min-width: 768px) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &:nth-child(odd) {
+                    .timeline-content-wrapper {
+                        order: 2;
+                        padding-left: 2rem;
+                    }
+
+                    .timeline-dot {
+                        order: 1;
+                    }
+                }
+
+                &:nth-child(even) {
+                    .timeline-content-wrapper {
+                        align-items: flex-end;
+                        text-align: right;
+                        padding-right: 2rem;
+                    }
+
+                    .timeline-dot {
+                        order: 2;
+                    }
+                }
+            }
+
+            .timeline-content-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .timeline-dot {
+                width: 3rem;
+                height: 3rem;
+                border-radius: 9999px;
+                background: linear-gradient(90deg, var(--accent-start), var(--accent-end));
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--text-white);
+                font-weight: 700;
+                font-size: 1.125rem;
+                margin-bottom: 1rem;
+                z-index: 10;
+
+                @media (min-width: 768px) {
+                    margin: 0;
+                }
+
+                &.education {
+                    background: #7c3aed;
+                }
+            }
+
+            .timeline-content {
+                padding: 1.5rem;
+                background-color: var(--bg-secondary);
+                border: 1px solid var(--border-color);
+                border-radius: 0.5rem;
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+                width: 100%;
+                z-index: 100;
+
+                @media (min-width: 768px) {
+                    width: calc(100% - 2rem);
+                }
+
+                .date {
+                    font-size: 0.875rem;
+                    font-weight: 500;
+                    color: #60a5fa;
+
+                    &.education {
+                        color: #a78bfa;
+                    }
+                }
+
+                h3 {
+                    font-size: 1.25rem;
+                    font-weight: 700;
+                    color: var(--text-white);
+                    margin-top: 0.25rem;
+                }
+
+                p {
+                    color: var(--text-secondary);
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+    }
+
+}
