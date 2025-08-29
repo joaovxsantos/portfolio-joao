@@ -14,7 +14,7 @@ section {
             height: 100%;
             width: 2px;
             background-color: var(--border-color);
-            display: none; // Hidden on mobile
+            display: none;
 
             @media (min-width: 768px) {
                 display: block;

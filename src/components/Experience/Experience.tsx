@@ -11,11 +11,10 @@ export function Experience() {
                     <div className={styles["timeline-dot"]}>1</div>
                     <div className={styles["timeline-content-wrapper"]}>
                         <div className={styles["timeline-content"]}>
-                            <p className={styles["date"]}>2020 - Presente</p>
-                            <h3>Desenvolvedor Sênior, Empresa X</h3>
+                            <p className={styles["date"]}>05/2024 - 11/2024</p>
+                            <h3>Estagiário FullStack, DBC Company</h3>
                             <p>
-                                Liderei o desenvolvimento de múltiplos projetos, otimizando a
-                                performance e a experiência do usuário.
+                                Participei do time de Fullstack, onde desenvolvi as seguintes competências: Docker, Java com orientação à objetos, banco de dados oracle, spring Web, data e security, testes unitários, HTML/CSS, Javascript e Typescript, React, Context API e Redux, e Ttyled Components.
                             </p>
                         </div>
                     </div>
@@ -26,10 +25,9 @@ export function Experience() {
                     <div className={styles["timeline-content-wrapper"]}>
                         <div className={styles["timeline-content"]}>
                             <p className={styles["date"]}>2018 - 2020</p>
-                            <h3>Desenvolvedor Pleno, Empresa Y</h3>
+                            <h3>Desenvolvedor Junior, DBC Company</h3>
                             <p>
-                                Participei ativamente no ciclo de vida completo de desenvolvimento de
-                                software, desde o conceito até a implantação.
+                                Alocado no cliente Usaflex, atuo como desenvolvedor front-end utilizando React com TypeScript, aplicando boas práticas de componentização e tipagem forte. Também utlizo CSS Modules, garantindo organização e escopo de estilos, além de trabalhar no ecossistema da VTEX IO, desenvolvendo e personalizando lojas virtuais, criando componentes reutilizáveis e ajustando funcionalidades para atender demandas de e-commerce.
                             </p>
                         </div>
                     </div>
@@ -40,12 +38,11 @@ export function Experience() {
                     <div className={styles["timeline-content-wrapper"]}>
                         <div className={styles["timeline-content"]}>
                             <p className={`${styles["date"]} ${styles["education"]}`}>
-                                2014 - 2018
+                                2022 - 2024
                             </p>
-                            <h3>Bacharelado em Ciência da Computação</h3>
+                            <h3>Tecnologo em Análise e Desenvolvimento de Sistemas</h3>
                             <p>
-                                Universidade Z. Foco em desenvolvimento de software e inteligência
-                                artificial.
+                                Formado em Análise e Desenvolvimento de Sistemas, pela faculdade Anhanguera Educacional
                             </p>
                         </div>
                     </div>
