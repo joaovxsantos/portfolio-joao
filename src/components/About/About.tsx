@@ -1,7 +1,9 @@
 import { Section } from '../Section/Section'
 import styles from './About.module.scss'
+import { data } from '../../data'
 
 export function About() {
+
     return (
         <>
             <Section title='Sobre mim' id='about'>
@@ -14,12 +16,13 @@ export function About() {
                         </p>
                         <h3>Minhas Habilidades</h3>
                         <div className={styles["skills-list"]}>
-                            <span className={styles["skill-badge"]}>React</span>
-                            <span className={styles["skill-badge"]}>TypeScript</span>
-                            <span className={styles["skill-badge"]}>Tailwind CSS</span>
-                            <span className={styles["skill-badge"]}>CSS Modules</span>
-                            <span className={styles["skill-badge"]}>Node.js</span>
-                            <span className={styles["skill-badge"]}>VTEX</span>
+                            {
+                                data.technologies.map((tech) => {
+                                    return <>
+                                        <span className={styles["skill-badge"]}>{tech}</span>
+                                    </>
+                                })
+                            }
                         </div>
                     </div>
                 </div>
