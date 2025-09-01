@@ -10,8 +10,8 @@ export function About() {
                         <img src="https://placehold.co/400x400/1f2937/FFFFFF?text=Foto" alt="Minha Foto" />
                     </div>
                     <div className={`${styles["about-text"]} `}>
-                        <p>Texto carreira</p>
-                        <p>Oq faço por fora</p>
+                        <p>Sou desenvolvedor <strong>front-end</strong> com experiência em desenvolvimento web, especialmente com <strong>React</strong> e <strong>TypeScript.</strong> Ao longo da minha trajetória, venho aprimorando habilidades técnicas em tecnologias como <strong>SCSS, Java, Node e Git</strong>, sempre com foco em escrever código limpo e manter boas práticas de versionamento.
+                        </p>
                         <h3>Minhas Habilidades</h3>
                         <div className={styles["skills-list"]}>
                             <span className={styles["skill-badge"]}>React</span>

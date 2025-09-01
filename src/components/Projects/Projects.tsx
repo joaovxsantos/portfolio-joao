@@ -4,7 +4,7 @@ import styles from './Projects.module.scss'
 export function Projects() {
     return (
 
-        <Section title='Meus Projetos'>
+        <Section title='Meus Projetos' id='projects'>
             <div className={styles["projects-grid"]}>
                 <div className={`${styles["project-card"]} ${styles["scroll-reveal"]}`}>
                     <img

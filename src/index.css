@@ -17,12 +17,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
 }
 
 body {
   min-height: 100vh;
-  scroll-behavior: smooth;
-  font-family: "Inter", sans-serif;
   background-color: var(--bg-primary);
   color: var(--text-primary);
   -webkit-font-smoothing: antialiased;

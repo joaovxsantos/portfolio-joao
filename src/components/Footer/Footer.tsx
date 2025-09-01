@@ -7,7 +7,7 @@ export function Footer() {
             <div className={styles.container}>
                 <div className={styles["footer-content"]}>
                     <div className={styles.copyright}>
-                        &copy; 2024 Seu Nome. Todos os direitos reservados.
+                        &copy; 2025 João Vitor Xavier. Todos os direitos reservados.
                     </div>
                     <div className={styles["social-icons"]}>
                         <a href="https://www.linkedin.com/in/joao-vx/" aria-label="LinkedIn" target='_blank'>

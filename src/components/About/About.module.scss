@@ -16,7 +16,8 @@ section {
             p {
                 font-size: 1.125rem;
                 color: var(--text-secondary);
-                margin-bottom: 1.5rem;
+                margin-bottom: 2.2rem;
+                line-height: 1.5rem;
             }
 
             h3 {
@@ -31,6 +32,7 @@ section {
                 flex-wrap: wrap;
                 gap: 0.75rem;
             }
+
             .skill-badge {
                 background-color: #374151;
                 color: #e5e7eb;

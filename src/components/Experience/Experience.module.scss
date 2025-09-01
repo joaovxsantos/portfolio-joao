@@ -1,7 +1,6 @@
 section {
     background-color: rgba(31, 41, 55, 0.5);
 
-
     .timeline-container {
         position: relative;
         max-width: 56rem;
@@ -24,63 +23,13 @@ section {
         .timeline-item {
             margin-bottom: 3rem;
 
-            @media (min-width: 768px) {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
-                &:nth-child(odd) {
-                    .timeline-content-wrapper {
-                        order: 2;
-                        padding-left: 2rem;
-                    }
-
-                    .timeline-dot {
-                        order: 1;
-                    }
-                }
-
-                &:nth-child(even) {
-                    .timeline-content-wrapper {
-                        align-items: flex-end;
-                        text-align: right;
-                        padding-right: 2rem;
-                    }
-
-                    .timeline-dot {
-                        order: 2;
-                    }
-                }
-            }
-
             .timeline-content-wrapper {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
             }
 
-            .timeline-dot {
-                width: 3rem;
-                height: 3rem;
-                border-radius: 9999px;
-                background: linear-gradient(90deg, var(--accent-start), var(--accent-end));
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: var(--text-white);
-                font-weight: 700;
-                font-size: 1.125rem;
-                margin-bottom: 1rem;
-                z-index: 10;
 
-                @media (min-width: 768px) {
-                    margin: 0;
-                }
-
-                &.education {
-                    background: #7c3aed;
-                }
-            }
 
             .timeline-content {
                 padding: 1.5rem;
@@ -113,9 +62,11 @@ section {
                     margin-top: 0.25rem;
                 }
 
-                p {
+
+                .timeline-description {
                     color: var(--text-secondary);
-                    margin-top: 0.5rem;
+                    margin-top: 1rem;
+                    line-height: 1.3rem;
                 }
             }
         }
