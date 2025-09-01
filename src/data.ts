@@ -50,4 +50,20 @@ export const data = {
         "Formado em Análise e Desenvolvimento de Sistemas, pela faculdade Anhanguera Educacional.",
     },
   ],
+  colors: {
+    React: "#93c5fd",
+    TypeScript: "#007ACC",
+    "Node.js": "#339933",
+    VTEX: "#FFFFFF",
+    "Tailwind CSS": "#FFFFFF",
+    "CSS Modules": "#2B4467",
+  },
+  bg: {
+    React: "rgba(59, 130, 246, 0.2)",
+    TypeScript: "#1C3643",
+    "Node.js": "#000000",
+    VTEX: "#7A1A9E",
+    "Tailwind CSS": "#06B6D4",
+    "CSS Modules": "#FFFFFF",
+  },
 };

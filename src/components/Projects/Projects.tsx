@@ -3,18 +3,18 @@ import styles from './Projects.module.scss'
 import { data } from '../../data'
 
 export function Projects() {
+
+    // console.log(data.colors["React"])
+
     return (
 
         <Section title='Meus Projetos' id='projects'>
             <div className={styles["projects-grid"]}>
                 {
-                    data.projects.map(({ title, description, image, technologies, link }) => {
+                    data.projects.map(({ title, description, technologies, link }) => {
                         return <>
                             <div className={`${styles["project-card"]} ${styles["scroll-reveal"]}`}>
-                                <img
-                                    src={image}
-                                    alt="Projeto 1"
-                                />
+
                                 <div className={styles["project-card-content"]}>
                                     <h3>{title}</h3>
                                     <p>
@@ -22,10 +22,10 @@ export function Projects() {
                                     </p>
                                     <div className={styles["project-tags"]}>
                                         {
-                                            technologies.map(tech => <span>{tech}</span>)
+                                            technologies.map(tech => <span style={{ color: data.colors[tech as keyof typeof data.colors], backgroundColor: data.bg[tech as keyof typeof data.bg] }}>{tech}</span>)
                                         }
                                     </div>
-                                    <a href={link} className={styles["project-link"]}>
+                                    <a href={link} className={styles["project-link"]} target='_blank'>
                                         Ver Projeto →
                                     </a>
                                 </div>
