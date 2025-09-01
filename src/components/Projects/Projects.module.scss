@@ -57,8 +57,10 @@
                 font-weight: 600;
                 padding: 0.25rem 0.75rem;
                 border-radius: 9999px;
-                // background-color: #1C3643;
-                // color: #007ACC;
+            }
+
+            @media screen and (max-width:768px) {
+                justify-content: center;
             }
         }
 

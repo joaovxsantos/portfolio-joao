@@ -5,7 +5,7 @@ export const data = {
     "Tailwind CSS",
     "CSS Modules",
     "Node.js",
-    "VTEX",
+    "VTEX"
   ],
   projects: [
     {
