@@ -1,13 +1,26 @@
+import { useState } from "react";
 import { Section } from "../Section/Section";
 import styles from './Contact.module.scss'
 
 
 export function Contact() {
+
+    const [isCopy, setIsCopy] = useState<boolean>(false)
+
+    const copyText = () => {
+        navigator.clipboard.writeText("joaovitor55670@gmail.com")
+        setIsCopy(true)
+
+        setTimeout(() => {
+            setIsCopy(false)
+        }, 2500)
+    }
+
     return (
         <Section id="contact" title="Entre em Contato">
             <p className={styles["paragraph-text-contact"]}>Estou sempre aberto a novas oportunidades e colaborações. A melhor forma de falar comigo é por e-mail.</p>
             <div className={`${styles["contact-cta"]} ${styles["scroll-reveal"]}`}>
-                <div className={styles["contact-email"]}>joaovitor55670@gmail.com</div>
+                <div className={styles["contact-email"]} onClick={copyText}>joaovitor55670@gmail.com</div>
                 <p className={styles["cta-subtitle"]}>Ou me encontre nestas plataformas:</p>
                 <div className={styles["social-icons"]}>
                     <a href="https://www.linkedin.com/in/joao-vx/" aria-label="LinkedIn" target="_blank">
@@ -18,6 +31,7 @@ export function Contact() {
                     </a>
                 </div>
             </div>
-        </Section>
+            <div className={`${styles["copy-div"]} ${isCopy ? styles["copy"] : styles["hidden"]}`}>Email copiado com sucesso!</div>
+        </Section >
     );
 }
