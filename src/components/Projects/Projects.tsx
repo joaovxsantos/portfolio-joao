@@ -3,9 +3,6 @@ import styles from './Projects.module.scss'
 import { data } from '../../data'
 
 export function Projects() {
-
-    // console.log(data.colors["React"])
-
     return (
 
         <Section title='Meus Projetos' id='projects'>

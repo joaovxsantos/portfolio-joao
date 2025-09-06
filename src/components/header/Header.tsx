@@ -4,7 +4,7 @@ export function Header() {
     return (
         <header className={styles["header"]}>
             <div className={styles["header-content"]}>
-                <a href="#hero" className={styles["logo"]}>João Vitor</a>
+                <a href="#" className={styles["logo"]}>João Vitor</a>
                 <nav className={styles["nav-desktop"]}>
                     <ul>
                         <li><a href="#about">Sobre</a></li>
