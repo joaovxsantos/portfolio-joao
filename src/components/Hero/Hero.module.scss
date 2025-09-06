@@ -1,0 +1,95 @@
+#hero {
+    // padding: 5rem 1.5rem;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8rem 1rem 3rem;
+
+    @media screen and (min-width:768px) {
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+    }
+
+    .background-effect {
+        position: absolute;
+        inset: 0;
+        background-color: var(--bg-primary);
+        pointer-events: none;
+        overflow: hidden;
+
+        div {
+            position: absolute;
+            inset: 0;
+            opacity: 0.25;
+            background-image: radial-gradient(circle at 30% 90%, var(--accent-start), transparent 40%), radial-gradient(circle at 80% 20%, var(--accent-end), transparent 40%);
+        }
+    }
+
+    .hero-content {
+        position: relative;
+        max-width: 48rem;
+        margin: 0 auto;
+
+        .profile-img {
+            width: 8rem;
+            height: 8rem;
+            border-radius: 9999px;
+            margin: 0 auto 2rem;
+            border: 4px solid var(--border-color);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 1.1;
+        letter-spacing: -0.025em;
+        margin-bottom: 1rem;
+        color: var(--text-white);
+
+        span {
+            background: linear-gradient(90deg, var(--accent-start), var(--accent-end));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+
+        @media screen and (min-width:768px) {
+            font-size: 4.5rem;
+        }
+    }
+
+    p {
+        font-size: 1.25rem;
+        color: var(--text-secondary);
+        margin-bottom: 2rem;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+
+
+        a {
+            color: var(--text-secondary);
+            transition: color 0.15s ease-in-out;
+
+            &:hover {
+                color: var(--text-white);
+            }
+        }
+
+        svg {
+            width: 2rem;
+            height: 2rem;
+            fill: currentColor;
+        }
+    }
+
+}

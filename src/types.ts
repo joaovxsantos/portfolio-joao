@@ -1,5 +1,0 @@
-export type cardType = {
-  title: string;
-  description: string;
-  image: string;
-};
