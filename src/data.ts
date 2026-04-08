@@ -14,7 +14,7 @@ export const data = {
       description: "Um ecommerce completo utilizando Next.js",
       image: "image/",
       technologies: ["React", "TypeScript", "Next.js"],
-      link: "https://github.com/joaovxsantos/portfolio-joao",
+      link: "https://github.com/joaovxsantos/ecommerce-front",
     },
     {
       title: "Dashboard Front",
