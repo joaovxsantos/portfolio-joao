@@ -5,9 +5,17 @@ export const data = {
     "Tailwind CSS",
     "CSS Modules",
     "Node.js",
+    "Next.js",
     "VTEX",
   ],
   projects: [
+    {
+      title: "Ecommerce Front",
+      description: "Um ecommerce completo utilizando Next.js",
+      image: "image/",
+      technologies: ["React", "TypeScript", "Next.js"],
+      link: "https://github.com/joaovxsantos/portfolio-joao",
+    },
     {
       title: "Dashboard Front",
       description: "Front-end de um projeto de dashboard financeiro",
@@ -21,13 +29,6 @@ export const data = {
       image: "image/",
       technologies: ["Node.js"],
       link: "https://github.com/joaovxsantos/dashboard-back",
-    },
-    {
-      title: "PortFolio Pessoal",
-      description: "Front-end de um projeto do meu Portfolio Pessoal",
-      image: "image/",
-      technologies: ["React", "TypeScript"],
-      link: "https://github.com/joaovxsantos/portfolio-joao",
     },
   ],
   experience: [
@@ -57,6 +58,7 @@ export const data = {
     VTEX: "#FFFFFF",
     "Tailwind CSS": "#FFFFFF",
     "CSS Modules": "#2B4467",
+    "Next.js": "#e5e7eb",
   },
   bg: {
     React: "rgba(59, 130, 246, 0.2)",
@@ -65,5 +67,6 @@ export const data = {
     VTEX: "#7A1A9E",
     "Tailwind CSS": "#06B6D4",
     "CSS Modules": "#FFFFFF",
+    "Next.js": "#374151",
   },
 };
