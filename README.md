@@ -1,69 +1,67 @@
-# React + TypeScript + Vite
+# Portfólio - João Vitor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o repositório do meu portfólio pessoal, desenvolvido com **React**, **TypeScript** e **Vite**. O objetivo deste projeto é apresentar minhas habilidades, experiências e projetos de forma interativa e visualmente atraente.
 
-Currently, two official plugins are available:
+## 🛠️ Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: Biblioteca para construção de interfaces de usuário.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
+- **Vite**: Ferramenta de build rápida e leve.
+- **SCSS**: Extensão do CSS com funcionalidades adicionais.
+- **ScrollReveal**: Biblioteca para animações de rolagem.
+- **React Icons**: Conjunto de ícones para React.
 
-## Expanding the ESLint configuration
+## 📂 Estrutura do Projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+├── components/       # Componentes reutilizáveis
+├── hooks/            # Hooks personalizados
+├── assets/           # Arquivos estáticos (imagens, ícones, etc.)
+├── App.tsx           # Componente principal
+├── main.tsx          # Ponto de entrada da aplicação
+├── index.css         # Estilos globais
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Funcionalidades
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Seções do Portfólio**:
+  - **Hero**: Apresentação inicial com links para redes sociais.
+  - **Sobre Mim**: Informações sobre minha trajetória e habilidades.
+  - **Projetos**: Lista de projetos com tecnologias utilizadas e links para repositórios.
+  - **Experiência**: Linha do tempo com experiências profissionais e acadêmicas.
+  - **Contato**: Informações de contato com funcionalidade de copiar e-mail.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Responsividade**: Layout adaptado para diferentes tamanhos de tela.
+- **Animações**: Efeitos de rolagem utilizando ScrollReveal.
+
+## 📦 Como Rodar o Projeto
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/joaovxsantos/portfolio-joao.git
+   ```
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+3. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+4. Acesse o projeto no navegador:
+   ```
+   http://localhost:5173
+   ```
+
+## 🧹 Scripts Disponíveis
+
+- `npm run dev`: Inicia o servidor de desenvolvimento.
+- `npm run build`: Gera a versão de produção.
+- `npm run preview`: Visualiza a versão de produção.
+- `npm run lint`: Executa o ESLint para verificar problemas no código.
+
+
+---
+
+Feito com ❤️ por **João Vitor**. Entre em contato pelo [LinkedIn](https://www.linkedin.com/in/joao-vx/) ou confira meus outros projetos no [GitHub](https://github.com/joaovxsantos).
