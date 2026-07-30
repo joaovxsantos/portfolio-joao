@@ -40,7 +40,7 @@ export const data = {
   ],
   experience: [
     {
-      data: "11/2024 - Até o momento",
+      data: "11/2024 - 01/2026",
       title: "Desenvolvedor Junior - DBC Company",
       description:
         "Alocado no cliente Usaflex, atuo como desenvolvedor front-end utilizando React com TypeScript, aplicando boas práticas de componentização e tipagem forte. Também utlizo SCSS, garantindo organização e escopo de estilos, além de trabalhar no ecossistema da VTEX IO, desenvolvendo e personalizando lojas virtuais, criando componentes reutilizáveis e ajustando funcionalidades para atender demandas de e-commerce.",
